@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxSarja.AlkuruutuController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Tiedosto">
+            <items>
+              <MenuItem fx:id="menuSulje" mnemonicParsing="false" onAction="#handleSulje" text="Sulje" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ohje">
+            <items>
+              <MenuItem fx:id="menuInfo" mnemonicParsing="false" onAction="#handleInfo" text="Info" />
+                  <MenuItem fx:id="menuOhje" mnemonicParsing="false" onAction="#handleOhje" text="Ohje" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <BorderPane prefHeight="121.0" prefWidth="684.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <center>
+            <TextField fx:id="fieldSarja" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="208.0" promptText="Sarjan nimi tähän" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </TextField>
+         </center>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <right>
+            <Button fx:id="buttonJatka" mnemonicParsing="false" onAction="#handleSarja" text="Jatka" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets right="150.0" />
+               </BorderPane.margin></Button>
+         </right>
+         <left>
+            <Label text="Sarjan nimi:" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="100.0" />
+               </BorderPane.margin>
+            </Label>
+         </left>
+      </BorderPane>
+   </bottom>
+   <center>
+      <Label prefHeight="70.0" prefWidth="336.0" text="   Urheilusarjan joukkuerekisteri" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </center>
+</BorderPane>

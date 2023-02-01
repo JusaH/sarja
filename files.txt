@@ -1,0 +1,60 @@
+﻿!https://tim.jyu.fi/view/kurssit/tie/ohj2/2019k/ht/juhoykin = Suunnitelma TIMissä
+kuvat/paavalikko.jpg = ohjelman pääikkuna 
+kuvat/alkuvalikko.jpg     = alkuvalikko
+kuvat/eiloydy.jpg   = aukeaa kun annettua nimea sarjaa ei loydy
+kuvat/muokkaajoukkue.jpg   = ikkuna joukkueen muokkaamiseen
+kuvat/muokkaapelaaja.jpg   = ikkuna pelaajan muokkaamiseen
+kuvat/poisto.jpg   = poiston varmistus
+
+=----------------------------------------
+= Ohjelmointi 2, 2019, vaihe 3
+=----------------------------------------
+= Katso <a href=".." target="_top">työ vaiheittain</a>
+=
+@https://trac.cc.jyu.fi/projects/ohj2ht/browser/k2019/juhoykin = Työ versionhallinnassa
+=
+= <h3>Ohjelman avustus</h3>
+!https://tim.jyu.fi/view/kurssit/tie/ohj2/2019k/ht/juhoykin = Suunnitelma
+=
+kuvat/scenepaaikkuna.PNG =pääikkkuna sb:llä
+kuvat/scenealkuruutu.PNG =alkuruutu sb:llä
+kuvat/scenepoisto.PNG =poiston varmistus sb:llä
+kuvat/scenevirhe.PNG = virheilmoitus väärästä sarjasta sb:llä
+kuvat/scenemuokkaajoukkue.PNG = ikkuna joukkueen muokkaamiseen sb:llä
+kuvat/scenemuokkaapelaaja.PNG = ikkuna pelaajan muokkaamiseen sb:llä
+kuvat/info.PNG
+
+
+
+=
+= <h3>Ajettava ohjelma</h3>
+sarja.jar = ajettava ohjelma, lataa ja aja
+=
+= <h3>Ohjelman esisuunnitelma</h3>
+@https://tim.jyu.fi/view/kurssit/tie/ohj2/2019k/ht/juhoykin = Suunnitelma TIMissä
+
+= <h3>Käyttöliittymän ulkoasu JavaFX:llä</h3>
+src/fxSarja/SarjaMain.java = ohjelman käynnistävä pääluokka
+src/fxSarja/sarja.css = tyylitiedosto (ei vielä muutettu mitään)
+
+src/fxSarja/alkuruutu.fxml = aloitusruutu
+src/fxSarja/AlkuruutuController.java = Ohjain, joka käsittelee aloitusruudun
+src/fxSarja/muokkaajoukkue.fxml
+src/fxSarja/muokkaapelaajaa.fxml 
+src/fxSarja/MuokkaaController.fxml = Ohjain, joka käsittelee muokkausruudun
+src/fxSarja/SarjaGUIVIew.fxml = pääikkuna
+src/fxSarja/SarjaGUIController.java = Ohjain, joka käsittelee pääikkunan
+src/fxSarja/virhe.fxml
+src/fxSarja/poisto.fxml
+src/fxSarja/info.fxml 
+src/fxSarja/bin
+src/fxSarja/.classpath  
+src/fxSarja/.project
+
+=
+= <h3>Muita tiedostoja</h3>
+sarjadiagram.png
+build.xml = Ant-skripti joka tekee .jar:in
+.project = Eclipsen projekti
+.classpath = Eclipsen luokkapolku
+build.fxbuild
